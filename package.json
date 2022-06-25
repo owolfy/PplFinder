@@ -4,7 +4,7 @@
   "bin": "./bin/cli.js",
   "license": "MIT",
   "repository": "https://github.com/powerlink/PplFinder",
-  "homepage": "https://owolfy.github.io",
+  "homepage": "https://owolfy.github.io/PplFinder",
   "dependencies": {
     "@material-ui/core": "^4.11.4",
     "@material-ui/icons": "^4.11.2",
