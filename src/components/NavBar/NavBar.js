@@ -3,11 +3,12 @@ import AppBar from "@material-ui/core/AppBar";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 
-const NavBar = () => {
+const NavBar = ({tabChange}) => {
   const [value, setValue] = useState(0);
 
   const handleChange = (_e, newValue) => {
     setValue(newValue);
+    tabChange && tabChange(newValue)
   };
 
   return (

@@ -1,13 +1,13 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-export const usePeopleFetch = () => {
+export const usePeopleFetch = ({goFetch}) => {
   const [users, setUsers] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     fetchUsers();
-  }, []);
+  }, [goFetch]);
 
   async function fetchUsers() {
     setIsLoading(true);
