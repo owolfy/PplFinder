@@ -21,9 +21,6 @@ const UserList = ({ users, isLoading, tab, loadMore }) => {
   useEffect(() => {
     const divElement = elementRef.current;
     divElement.addEventListener('scroll', handleScroll, true);
-    // return () => {
-    //   divElement.removeEventListener('scroll', handleScroll);
-    // };
   }, []);
 
   const handleScroll = event => {
@@ -34,7 +31,6 @@ const UserList = ({ users, isLoading, tab, loadMore }) => {
   };
 
   useEffect(() => {
-    // console.log('0000users', users.length);
     filterUsers();
   }, [users]);
 
